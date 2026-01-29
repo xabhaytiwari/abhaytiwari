@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhay</title>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #555555;
+      --link: #111111;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e0e0e;
+        --text: #e6e6e6;
+        --muted: #9a9a9a;
+        --link: #e6e6e6;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 620px;
+      margin: 90px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 1.6rem;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      margin-top: 2.4rem;
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      opacity: 0.75;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Abhay Tiwari</h1>
+    <div class="subtitle">AI · ML · Cricket</div>
+
+    <p>
+      I work on machine learning systems and enjoy building models that
+      connect theory with real-world data and constraints.
+    </p>
+
+    <section>
+      <h2>Interests</h2>
+      <ul>
+        <li>Machine Learning (VAEs, Diffusion, Representation Learning)</li>
+        <li>Physics Informed Neural Networks</li>
+        <li>Applied AI (remote sensing, climate, systems)</li>
+        <li>Cricket (Tests & analytics)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="AbhayResume18Jan.pdf">Resume</a></li>
+        <li><a href="https://github.com/xabhaytiwari">GitHub</a></li>
+        <li><a href="https://leetcode.com/u/abhay-tiwari/">Leetcode</a></li>
+        <li><a href="https://linkedin.com/in/abhay-tiwari-in">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/abhayxtiwari/">Instagram</a></li>
+        <li><a href="mailto:emailatabhay@gmail.com">Email</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      Currently exploring diffusion models for geospatial data.
+    </footer>
+  </main>
+</body>
+</html>
