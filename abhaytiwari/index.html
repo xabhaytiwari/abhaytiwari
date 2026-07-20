@@ -166,17 +166,19 @@
         max-width: 240px;
     }
 
-    .img-placeholder {
+    /* NEW IMAGE PROTECTION CSS */
+    .protected-img {
         width: 100%;
         aspect-ratio: 4/3;
+        object-fit: cover;
         background-color: var(--bg-panel);
         border-radius: 2px;
         margin-bottom: 0.8rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #555;
-        font-size: 0.9rem;
+        /* Protection attributes */
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-touch-callout: none;
+        pointer-events: none; /* Disables all click events, ensuring the image can't be interacted with */
     }
 
     .pic-caption {
@@ -325,18 +327,19 @@
         <div class="profile-split">
             <div class="bio">
                 <p>
-                    Research Intern at IIT Hyderabad building machine learning systems that connect theory with real-world data <span class="cite-hidden">[cite: 1, 2]</span>. <a href="\meme.jpeg" target="_blank">(cliché)</a> <span class="cite-hidden">[cite: 1]</span>
+                    Research Intern at IIT Hyderabad building machine learning systems that connect theory with real-world data <span class="cite-hidden"></span>. <a href="\meme.jpeg" target="_blank">(cliché)</a> <span class="cite-hidden"></span>
                 </p>
                 <p>
-                    Interested in representation learning, generative models, reinforcement learning, and active learning frameworks <span class="cite-hidden">[cite: 1, 2]</span>.
+                    Interested in representation learning, generative models, reinforcement learning, and active learning frameworks <span class="cite-hidden"></span>.
                 </p>
                 <p>
-                    Let's talk about AI, research, or building meaningful systems. Better, can you teach me Graph Neural Networks? <span class="cite-hidden">[cite: 1]</span>
+                    Let's talk about AI, research, or building meaningful systems. Better, can you teach me Graph Neural Networks? <span class="cite-hidden"></span>
                 </p>
             </div>
             
             <div class="profile-pic">
-                <div class="img-placeholder">[image_ad4045.png]</div>
+                <!-- NEW SECURED IMAGE TAG -->
+                <img src="1783696080167.png" alt="Abhay Tiwari" class="protected-img" oncontextmenu="return false;" draggable="false">
                 <div class="pic-caption">Research Intern, IITH.</div>
             </div>
         </div>
